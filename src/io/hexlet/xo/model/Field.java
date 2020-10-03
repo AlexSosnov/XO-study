@@ -1,6 +1,6 @@
 package io.hexlet.xo.model;
 
-import io.hexlet.xo.model.exceptions.AlreadyIqupidException;
+import io.hexlet.xo.model.exceptions.AlreadyQccupiedException;
 import io.hexlet.xo.model.exceptions.InvalidPointException;
 
 import java.awt.*;
@@ -26,7 +26,7 @@ public class Field {
     }
 
     public void setFigure(final Point point, final Figure figure) throws InvalidPointException,
-                                                                        AlreadyIqupidException {
+                                                                         AlreadyQccupiedException {
         if(!checkPoint(point)) {
             throw new InvalidPointException();
         }
